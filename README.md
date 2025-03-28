@@ -1,9 +1,9 @@
 # Sistya Chat AI
 
-*An AI-powered chatbot with memory and theme customization.*
+*An AI-powered chatbot with chat history and theme customization.*
 
 ## 🚀 Overview
-Sistya Chat AI is an intelligent chatbot that leverages Google's **Gemini API** to answer user queries while storing previous conversations for context-aware interactions. It features a sleek UI with light and dark mode support, providing a seamless chat experience.
+Sistya Chat AI is an intelligent chatbot that leverages Google's **Gemini API** to answer user queries while storing previous conversations. It features a sleek UI with light and dark mode support, providing a seamless chat experience.
 
 ## ✨ Features
 - 🤖 **AI-Powered Chatbot** (Google Gemini API)
