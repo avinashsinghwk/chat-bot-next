@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sistya Chat AI
 
-## Getting Started
+*An AI-powered chatbot with memory and theme customization.*
 
-First, run the development server:
+## 🚀 Overview
+Sistya Chat AI is an intelligent chatbot that leverages Google's **Gemini API** to answer user queries while storing previous conversations for context-aware interactions. It features a sleek UI with light and dark mode support, providing a seamless chat experience.
 
+## ✨ Features
+- 🤖 **AI-Powered Chatbot** (Google Gemini API)
+- 💾 **Chat Memory** (Saves previous chats in PostgreSQL)
+- 🎨 **Light & Dark Theme Support**
+- 🔄 **Seamless User Experience** (React.js & Next.js)
+
+## 🛠️ Built With
+- **Next.js** (App Router)
+- **React.js** (Frontend UI)
+- **Google Gemini API** (@google/generative-ai package)
+- **TypeScript** (Static Typing)
+- **PostgreSQL** (Database for storing chat history)
+- **Node.js** (Backend processing)
+- **Vercel** (Deployment)
+
+## 🌍 Live Demo
+Sistya Chat AI is deployed on **[Vercel](https://sistya-chat.vercel.app)** for real-time chatbot interactions.
+
+## 📥 Installation
+
+To set up Sistya Chat AI locally, follow these steps:
+
+### Prerequisites
+- **Node.js** (>= 18)
+- **npm** (Package manager)
+- **PostgreSQL** (For chat history storage)
+
+### Clone the Repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/avinashsinghwk/chat-bot-next.git
+cd chat-bot-next
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Install Dependencies
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Set Up Environment Variables
+Create a `.env` file with the following variables:
+```env
+CHAT_API=your-google-gemini-api-key
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+DATABASE_URL=postgresql://user:password@localhost:5432/sistya-chat-ai
+```
 
-## Learn More
+### Apply Database Migrations
+```bash
+npx prisma migrate dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+### Run the Development Server
+```bash
+npm run dev
+```
+Visit `http://localhost:3000` to start chatting with Sistya Chat AI.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📧 Contact
+For support or inquiries, reach out via:
+- GitHub Issues: [Create an Issue](https://github.com/avinashsinghwk/chat-bot-next/issues)
+- Email: abhinashsinghwk2@gmail.com
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+⭐ **Star this repository** if you found it useful!
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
