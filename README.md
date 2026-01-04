@@ -46,7 +46,7 @@ npm install
 ### Set Up Environment Variables
 Create a `.env` file with the following variables:
 ```env
-CHAT_API=your-google-gemini-api-key
+GEMINI_API_KEY=your-google-gemini-api-key
 
 DATABASE_URL=postgresql://user:password@localhost:5432/sistya-chat-ai
 ```
